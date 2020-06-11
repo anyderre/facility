@@ -1,0 +1,60 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="room">
+            <h2><span jhiTranslate="facilityApp.room.detail.title">Room</span> {{ room.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="facilityApp.room.roomNumber">Room Number</span></dt>
+                <dd>
+                    <span>{{ room.roomNumber }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.floor">Floor</span></dt>
+                <dd>
+                    <span>{{ room.floor }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.numberOfBed">Number Of Bed</span></dt>
+                <dd>
+                    <span>{{ room.numberOfBed }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.capacity">Capacity</span></dt>
+                <dd>
+                    <span>{{ room.capacity }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.creationDate">Creation Date</span></dt>
+                <dd>
+                    <span>{{ room.creationDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.modificationDate">Modification Date</span></dt>
+                <dd>
+                    <span>{{ room.modificationDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.facility">Facility</span></dt>
+                <dd>
+                    <div *ngIf="room.facility">
+                        <a [routerLink]="['/facility', room.facility?.id, 'view']">{{ room.facility?.description }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.room.user">User</span></dt>
+                <dd>
+                    {{ room.user?.login }}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/room', room.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

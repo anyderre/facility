@@ -1,0 +1,29 @@
+{
+  "facilityApp": {
+    "resident": {
+      "home": {
+        "title": "Residents",
+        "createLabel": "Create a new Resident",
+        "createOrEditLabel": "Create or edit a Resident",
+        "notFound": "No Residents found"
+      },
+      "created": "A new resident is created with identifier {{ param }}",
+      "updated": "A resident is updated with identifier {{ param }}",
+      "deleted": "A resident is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete resident {{ id }}?"
+      },
+      "detail": {
+        "title": "Resident"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phoneNumber": "Phone Number",
+      "email": "Email",
+      "creationDate": "Creation Date",
+      "modificationDate": "Modification Date",
+      "room": "Room",
+      "user": "User"
+    }
+  }
+}

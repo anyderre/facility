@@ -1,0 +1,29 @@
+{
+  "facilityApp": {
+    "room": {
+      "home": {
+        "title": "Habitaciones",
+        "createLabel": "Crear nueva habitación",
+        "createOrEditLabel": "Crear o editar habitación",
+        "notFound": "Ningún habitaciones encontrado"
+      },
+      "created": "Una nueva habitación ha sido creada con el identificador {{ param }}",
+      "updated": "Una habitación ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una habitación ha sido eliminada con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar la habitación {{ id }}?"
+      },
+      "detail": {
+        "title": "habitación"
+      },
+      "roomNumber": "Número de Habitación",
+      "floor": "Piso",
+      "numberOfBed": "Cantidad de Camas",
+      "capacity": "Capacidad",
+      "facility": "Instalación",
+      "creationDate": "Fecha de Creación",
+      "modificationDate": "Fecha de Modificación",
+      "user": "Usuario"
+    }
+  }
+}

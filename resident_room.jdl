@@ -1,0 +1,38 @@
+
+entity Facility {
+	description String required,
+    area Float,
+	quantity Integer,
+  	creationDate Instant,
+   	modificationDate Instant,
+}
+
+entity Resident {
+	firstName String required,
+    lastName String required,
+    phoneNumber String,
+    email String,
+   	creationDate Instant,
+   	modificationDate Instant,
+}
+
+entity Room {
+	roomNumber Integer required,
+	floor Integer,
+	numberOfBed Integer,
+	capacity Integer,
+   	creationDate Instant,
+   	modificationDate Instant,
+}
+
+relationship ManyToOne {
+	Room{facility(description)} to Facility
+    Facility{user(login)} to User
+    Room{user(login)} to User
+    Resident{user(login)} to User
+    Resident{room(roomNumber)} to Room
+}
+
+paginate Resident, Room, Facility with pagination
+
+

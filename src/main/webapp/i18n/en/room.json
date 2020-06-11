@@ -1,0 +1,29 @@
+{
+  "facilityApp": {
+    "room": {
+      "home": {
+        "title": "Rooms",
+        "createLabel": "Create a new room",
+        "createOrEditLabel": "Create or edit a room",
+        "notFound": "No rooms found"
+      },
+      "created": "A new room is created with identifier {{ param }}",
+      "updated": "A room is updated with identifier {{ param }}",
+      "deleted": "A room is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete room {{ id }}?"
+      },
+      "detail": {
+        "title": "Room"
+      },
+      "roomNumber": "Room Number",
+      "floor": "Floor",
+      "numberOfBed": "Number Of Bed",
+      "capacity": "Capacity",
+      "facility": "Facility",
+      "modificationDate": "Modification Date",
+      "creationDate": "Creation Date",
+      "user": "User"
+    }
+  }
+}

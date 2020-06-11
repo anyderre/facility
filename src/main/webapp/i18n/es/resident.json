@@ -1,0 +1,29 @@
+{
+  "facilityApp": {
+    "resident": {
+      "home": {
+        "title": "Residentes",
+        "createLabel": "Crear nuevo residente",
+        "createOrEditLabel": "Crear o editar residente",
+        "notFound": "Ningún residentes encontrado"
+      },
+      "created": "Un nuevo residente ha sido creado con el identificador {{ param }}",
+      "updated": "Un residente ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un residente ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar residente {{ id }}?"
+      },
+      "detail": {
+        "title": "residente"
+      },
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phoneNumber": "Número de Teléfono",
+      "email": "Correo",
+      "creationDate": "Fecha de Creación",
+      "modificationDate": "Fecha de Modificación",
+      "room": "Habitación",
+      "user": "Usuario"
+    }
+  }
+}

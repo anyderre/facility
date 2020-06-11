@@ -1,0 +1,27 @@
+{
+  "facilityApp": {
+    "facility": {
+      "home": {
+        "title": "Facilities",
+        "createLabel": "Create a new facility",
+        "createOrEditLabel": "Create or edit a facility",
+        "notFound": "No facilities found"
+      },
+      "created": "A new facility is created with identifier {{ param }}",
+      "updated": "A facility is updated with identifier {{ param }}",
+      "deleted": "A facility is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete facility {{ id }}?"
+      },
+      "detail": {
+        "title": "Facility"
+      },
+      "description": "Description",
+      "area": "Area(ft²)",
+      "quantity": "Quantity",
+      "creationDate": "Creation Date",
+      "modificationDate": "Modification Date",
+      "user": "User"
+    }
+  }
+}

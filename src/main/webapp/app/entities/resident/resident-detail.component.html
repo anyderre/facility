@@ -1,0 +1,60 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="resident">
+            <h2><span jhiTranslate="facilityApp.resident.detail.title">Resident</span> {{ resident.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="facilityApp.resident.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{ resident.firstName }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ resident.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.phoneNumber">Phone Number</span></dt>
+                <dd>
+                    <span>{{ resident.phoneNumber }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.email">Email</span></dt>
+                <dd>
+                    <span>{{ resident.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.creationDate">Creation Date</span></dt>
+                <dd>
+                    <span>{{ resident.creationDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.modificationDate">Modification Date</span></dt>
+                <dd>
+                    <span>{{ resident.modificationDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.user">User</span></dt>
+                <dd>
+                    {{ resident.user?.login }}
+                </dd>
+                <dt><span jhiTranslate="facilityApp.resident.room">Room</span></dt>
+                <dd>
+                    <div *ngIf="resident.room">
+                        <a [routerLink]="['/room', resident.room?.id, 'view']">{{ resident.room?.roomNumber }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/resident', resident.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "facilityApp": {
+    "facility": {
+      "home": {
+        "title": "Instalaciones",
+        "createLabel": "Crear nuevo Instalación",
+        "createOrEditLabel": "Crear o editar Instalación",
+        "notFound": "Ningún Facilities encontrado"
+      },
+      "created": "Una nueva instalación ha sido creada con el identificador {{ param }}",
+      "updated": "Una instalación ha sido actualizada con el identificador {{ param }}",
+      "deleted": "Una instalación ha sido eliminada con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar la instalación {{ id }}?"
+      },
+      "detail": {
+        "title": "instalación"
+      },
+      "description": "Descripción",
+      "area": "Area(ft²)",
+      "quantity": "Cantidad",
+      "creationDate": "Fecha de Creación",
+      "modificationDate": "Fecha de Modificación",
+      "user": "Usuario"
+    }
+  }
+}
